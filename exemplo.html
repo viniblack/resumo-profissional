@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Certificado</title>
+
+</head>
+
+<style>
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+
+  body {
+    line-height: 1;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  blockquote,
+  q {
+    quotes: none;
+  }
+
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+
+  /* remember to define focus styles! */
+  :focus {
+    outline: 0;
+  }
+
+  /* remember to highlight inserts somehow! */
+  ins {
+    text-decoration: none;
+  }
+
+  del {
+    text-decoration: line-through;
+  }
+
+  /* tables still need 'cellspacing="0"' in the markup */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 20cm;
+    border: 1px solid black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  p {
+    color: gray;
+  }
+
+  .certificado {
+    text-align: center;
+    justify-content: center;
+  }
+
+  @media print {
+    @page {
+      size: a4 landscape;
+      margin: 0.5cm;
+    }
+  }
+
+  .main {
+    width: 28.7cm;
+
+  }
+
+  .header {
+    width: 28.7cm;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer img {
+    width: 28.7cm;
+  }
+
+
+  .backgroundcertificate {
+    background-color: #f7bc15;
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+
+
+  .azul img {
+    width: 15cm;
+  }
+
+  .username {
+    font-size: 4rem;
+    text-align: center;
+
+
+  }
+
+  .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-right: 16px solid white;
+  }
+
+  .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid white;
+  }
+
+  .logo img {
+    width: 5cm;
+    margin: 0.5cm 0.5cm 0 0;
+  }
+
+
+
+
+  .certificado {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: auto;
+  }
+</style>
+
+<body>
+  <div class="header">
+    <div class="azul">
+      <img src="wp-content/themes/edumodo-child/assets/img/certificado-ondas-03.svg" alt="">
+    </div>
+    <div class="logo">
+      <img src="wp-content/themes/edumodo-child/assets/img/modoensina-logo-02.svg" alt="">
+    </div>
+  </div>
+  <div class="main">
+
+
+    <div class="certificado">
+      <div class="certificado">CERTIFICADO </div>
+      <div class=" backgroundcertificate"> DE CONCLUSÃO </div>
+      <div style="margin-top:-2.2%;margin-left:64%" class="arrow-left"></div>
+      <div style="margin-top:-3%;margin-left:34.9%" class="arrow-right"></div>
+    </div>
+    <p style="margin-top:0.5cm"> Certificamos que </p>
+    <div class="username"> <?php echo implode("", $user["first_name"]) . '&nbsp' . implode("", $user["last_name"]) ?>
+    </div>
+
+    <p style="margin-top:1cm"> Concluiu o curso </p>
+
+    <div style="margin-top:0.2cm;padding-left:0.5cm;padding-right:0.5cm;font-size:2rem;text-align:center">
+      <?php echo $getCourseTitle ?> </div>
+
+    <p style="margin-top:0.3cm"> com ínicio em
+      <span> <?php echo date("d/m/Y", strtotime($start_time[0]->start_time)); ?> </span>
+      e concluído em
+      <span> <?php echo date("d/m/Y", strtotime($end_time[0]->end_time)); ?>.</span>
+    </p>
+
+    <p style="margin-top:0.2cm"> Ministrado por
+      <span style="font-weight:bold"> <?php echo $authorName->get_author_display_name() ?> </span>
+      <p>
+
+
+
+  </div>
+  <div class="footer">
+
+    <img src="wp-content/themes/edumodo-child/assets/img/certificado-ondas-inferior.svg" alt="">
+
+  </div>
+
+</body>
+
+</html>
