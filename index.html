@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Resumo profissional</title>
 </head>
+
 <!-- Reset  -->
 <style>
   html {
@@ -365,69 +366,77 @@
     font-weight: 500;
   }
 
-  .container {
-    /* width: 2480px;
-    height: 3508px; */
-    /* background-color: #F8F9FA; */
-  }
-
   /* Header */
 
   .header-image {
     position: absolute;
+
     z-index: -1;
+
   }
 
   .header_professional {
     padding-top: 12vh;
     padding-left: 5vw;
+
   }
 
   .header_professional-name {
     font: 300 2.2rem Roboto;
+
   }
 
   .header_professional-text {
-    font-size: .8rem;
     font-weight: bold;
+
     color: #777777;
+    font-size: .8rem;
     line-height: 1.5rem;
+
   }
 
   .header_professional-text span:not(:last-child)::after {
     content: ' |';
+
   }
 
-  .header_professional-elipse-blue {
-    width: 40vw;
+  .header_shapes-elipse-blue {
     position: absolute;
-    top: -9vh;
+
     right: -15vw;
+    top: -9vh;
+    width: 40vw;
+
   }
 
-  .header_professional-elipse-yellow {
+  .header_shapes-elipse-yellow {
     position: absolute;
-    width: 17vw;
+
     right: 32vw;
     top: 11vh;
+    width: 17vw;
+
   }
 
-  .header_professiona-container-photo {
+  .header_shapes-container-photo {
     position: absolute;
+
     right: 4vw;
     top: 3.5vh;
+
   }
 
-  .header_professional-photo {
-    position: absolute;
-    top: 1.5vh;
-    left: 1.5vw;
-    width: 90%;
-  }
-
-  .header_professional-elipse-white {
-
+  .header_shapes-elipse-white {
     width: 37vw;
+
+  }
+
+  .header_shapes-photo {
+    position: absolute;
+
+    left: 1.5vw;
+    top: 1.5vh;
+    width: 90%;
 
   }
 </style>
@@ -445,12 +454,12 @@
           <span>UI Designer</span>
         </p>
       </div>
-      <div class="header_professional">
-        <img class="header_professional-elipse-blue" src="./assets/img/elipse-blue.svg">
-        <img class="header_professional-elipse-yellow" src="./assets/img/elipse-yellow.svg">
-        <div class="header_professiona-container-photo">
-          <img class="header_professional-elipse-white" src="./assets/img/elipse-white.svg">
-          <img class="header_professional-photo" src="./assets/img/perfil.png">
+      <div class="header_shapes">
+        <img class="header_shapes-elipse-blue" src="./assets/img/elipse-blue.svg">
+        <img class="header_shapes-elipse-yellow" src="./assets/img/elipse-yellow.svg">
+        <div class="header_shapes-container-photo">
+          <img class="header_shapes-elipse-white" src="./assets/img/elipse-white.svg">
+          <img class="header_shapes-photo" src="./assets/img/perfil.png">
         </div>
       </div>
     </section>
