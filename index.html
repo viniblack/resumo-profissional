@@ -357,7 +357,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
   :root {
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Roboto', sans-serif;
     color: #121212;
   }
@@ -366,23 +366,33 @@
     font-weight: 500;
   }
 
-  /* Header */
-
-  .header-image {
+  .background {
     position: absolute;
 
     z-index: -1;
 
   }
 
+  .divider{
+    background-color: #eaebeb;
+    height: 3px;
+    border: none;
+    margin: 1rem 0;
+  }
+
+  .container{
+    margin: 0 5vw;
+  }
+
+  /* Header */
+
   .header_professional {
     padding-top: 12vh;
-    padding-left: 5vw;
 
   }
 
   .header_professional-name {
-    font: 300 2.2rem Roboto;
+    font: 300 2.3rem Roboto;
 
   }
 
@@ -439,20 +449,40 @@
     width: 90%;
 
   }
+
+  /* Info */
+  .info {
+    margin-top: 15vh;
+
+  }
+
+  ul.info_contacts li {
+    display: inline;
+    line-height: 2;
+  }
+
+  .info_contacts img {
+    margin-right: .4rem;
+    width: 1rem;
+  }
+
+  .info_contacts li:not(:first-child) {
+    margin-left: .5rem;
+  }
 </style>
 </head>
 
 <body>
+  <img class="background" src="./assets/img/bg.svg">
   <div class="container">
     <section class="header">
-      <img class="header-image" src="./assets/img/bg.svg">
       <div class="header_professional">
         <h1 class="header_professional-name"><strong>João</strong> Aparecido Silva</h1>
         <p class="header_professional-text">
           <span>Desenvolvedor front-end</span>
           <span>UX Designer</span>
           <span>UI Designer</span>
-        </p>
+
       </div>
       <div class="header_shapes">
         <img class="header_shapes-elipse-blue" src="./assets/img/elipse-blue.svg">
@@ -465,7 +495,33 @@
     </section>
 
     <section class="info">
-
+      <ul class="info_contacts">
+        <li>
+          <span><img src="assets/img/profile.svg">23 anos</span>
+        </li>
+        <li>
+          <span><img src="assets/img/phone.svg">(11) 91823 3032</span>
+        </li>
+        <li>
+          <span><img src="assets/img/email.svg">joao.silva@moovenconsulting.com.br</span>
+        </li>
+        <li>
+          <span><img src="assets/img/pin.svg">Osasco, São Paulo, Brasil</span>
+        </li>
+        <li>
+          <span><img src="assets/img/linkedin.svg">linkedin.com/in/joaosilva</span>
+        </li>
+        <li>
+          <span><img src="assets/img/web.svg">joao.silva.com.br</span>
+        </li>
+        <li>
+          <span><img src="assets/img/facebook.svg">facebook.com/Joao-Silva/</span>
+        </li>
+        <li>
+          <span><img src="assets/img/youtube.svg">youtube.com/c/joaosilva</span>
+        </li>
+      </ul>
+      <hr class="divider">
     </section>
     <section class="about">
 
