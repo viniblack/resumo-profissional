@@ -510,11 +510,31 @@
   }
 
   /* Professional information */
-  ul.professional_information li {
-    display: inline;
+  .professional_information_text form {
+    width: 100%;
 
-    margin-right: 20rem;
-    line-height: 2;
+  }
+
+  .professional_information_text p {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #464646;
+  }
+
+  .professional_information_text span {
+    margin-left: .5rem;
+    font-weight: normal;
+
+  }
+
+  .professional_information_text-col-1 {
+    padding-right: 30vw;
+
+  }
+
+  .professional_information_text-col-2 {
+    display: flex;
+    flex-direction: column;
 
   }
 
@@ -639,34 +659,45 @@
       <div class="professional_icon">
         <span><img src="./assets/img/profissionais.svg">Dados Profissionais</span>
       </div>
-      <div class="professional_information-text">
-        <ul class="professional_information">
-          <li>
-            <strong>Tipo de contratação:</strong> CLT/PJ
-          </li>
-          <li>
-            <strong>Pretensão salarial CLT:</strong> R$10.000,00
-          </li>
-          <li>
-            <strong>Tempo de atuação:</strong> +5 anos
-          </li>
-          <li>
-            <strong>Pretensão salarial PJ:</strong> R$10.000,00
-          </li>
-          <li>
-            <strong>Última remuneração</strong> R$10.000,00
-          </li>
-        </ul>
+      <div class="professional_information_text">
+        <table>
+          <tr>
+            <td class="professional_information_text-col-1">
+              <table>
+                <p>
+                  Tipo de contratação: <span>CLT/PJ</span>
+                </p>
+
+                <p>
+                  Tipo de atuação: <span>+5 anos</span>
+                </p>
+                <p>
+                  Pretensão salarial PJ: <span>R$10.000,00</span>
+                </p>
+              </table>
+            </td>
+            <td class="professional_information_text-col-2">
+              <table>
+                <p>
+                  Pretensão salarial CLT: <span>R$10.000,00</span>
+                </p>
+
+                <p>
+                  Última remuneração <span>+5 anos</span>
+                </p>
+              </table>
+            </td>
+          </tr>
+        </table>
       </div>
       <hr class="divider">
 
     </section>
-
     <section class="city">
       <div class="professional_icon">
         <span><img src="./assets/img/profissionais.svg">Cidades de atuação</span>
       </div>
-      <div class="professional_information-text city_text">
+      <div class="city_text">
         <p>
           <strong>Cidades de atuação:</strong>
           <br>
