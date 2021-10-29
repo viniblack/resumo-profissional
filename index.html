@@ -501,6 +501,8 @@
   /* About */
 
   .about-text {
+    text-align: justify;
+
     line-height: 1.2;
     word-spacing: 1px;
 
@@ -509,8 +511,42 @@
   /* Professional information */
   ul.professional_information li {
     display: inline;
+
     margin-right: 20rem;
     line-height: 2;
+
+  }
+
+  /* City */
+  .city_text span {
+    line-height: 2rem;
+
+  }
+
+  /* Footer */
+
+  .footer_pagination {
+    display: flex;
+    align-items: center;
+
+    bottom: 3vh;
+    color: #777777;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 4vw;
+    word-spacing: 3px;
+
+  }
+
+  .footer_pagination span::before{
+    content: "|";
+
+  }
+
+  .footer_pagination img {
+    margin-right: .5rem;
+    width: 10vw;
+
   }
 </style>
 </head>
@@ -546,7 +582,7 @@
           <span><img src="assets/img/phone.svg">(11) 91823 3032</span>
         </li>
         <li>
-          <span><img src="assets/img/email.svg">joao.silva@moovenconsulting.com.br</span>
+          <span><img src="assets/img/mail.svg">joao.silva@moovenconsulting.com.br</span>
         </li>
         <li>
           <span><img src="assets/img/pin.svg">Osasco, São Paulo, Brasil</span>
@@ -573,21 +609,27 @@
       </div>
       <div class="about-text">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit praesentium sequi omnis repudiandae
-          accusantium, iste atque porro possimus, fugiat placeat explicabo? Quis nulla magnam earum sint quidem maiores
-          maxime nobis tenetur, fuga sunt nesciunt ipsum consectetur? Tempore reprehenderit, eum voluptas necessitatibus
-          sit labore porro. Laborum, voluptatem quas natus aspernatur reiciendis quia ipsam repellat inventore sapiente
-          amet molestiae maiores quis id distinctio doloremque, voluptates neque tempore perspiciatis quasi. Magnam,
-          mollitia, quae atque veniam omnis eos accusantium odit rerum minima similique consequatur non, aliquid rem.
-          Quisquam nisi error ad exercitationem ut beatae. Voluptas ea quis explicabo magnam dignissimos quam harum
-          ducimus laudantium id impedit, atque possimus voluptatibus cum nesciunt nam animi iure placeat aliquid saepe
-          obcaecati voluptatem expedita incidunt molestias. Quo placeat eaque quasi repellat maxime eligendi minus saepe
-          eos facilis, ab facere, assumenda eveniet commodi quos alias reprehenderit. Molestias amet voluptates fuga
-          repellat alias quis officia suscipit laboriosam fugiat rerum dignissimos et quidem quisquam eum, voluptatem
-          culpa odio deleniti! Fugiat hic perspiciatis, ab veritatis reiciendis officiis optio, quas eligendi laborum
-          fuga voluptas possimus! Quasi voluptatem eaque nihil iure voluptatibus harum amet nostrum non? Optio tenetur
-          facilis, possimus et quas vel necessitatibus? Sunt repudiandae ratione itaque nam nemo velit recusandae
-          voluptas accusamus!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id purus felis. Vivamus a ornare ex, et imperdiet
+          dui. Integer sollicitudin orci et ante dignissim, eget gravida sapien euismod. Nullam in justo porttitor,
+          vulputate diam eu, dignissim nisl. Morbi a neque magna. Etiam a magna fermentum, porta est efficitur, faucibus
+          nunc. Nulla facilisi. Fusce eros ligula, vulputate sit amet mauris quis, porttitor lacinia mi. Pellentesque
+          congue mauris ac eleifend convallis. Mauris semper maximus neque, sit amet faucibus lectus tempus a. Aliquam
+          molestie lacinia consectetur. Fusce tincidunt sodales sapien vel ultrices. Nam scelerisque risus sit amet
+          purus tempor, vestibulum vestibulum eros vestibulum. Vivamus sed semper nisl. Pellentesque nulla mi, elementum
+          eu porttitor vitae, faucibus ornare mi. Donec dignissim tristique odio, sed finibus justo tempor sed. Vivamus
+          felis dui, bibendum eu lobortis ut, porta ac ipsum. Integer aliquam eu arcu vitae vestibulum. Aenean id ex ac
+          quam lacinia lobortis eros.
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id purus felis. Vivamus a ornare ex, et imperdiet
+          dui. Integer sollicitudin orci et ante dignissim, eget gravida sapien euismod. Nullam in justo porttitor,
+          vulputate diam eu, dignissim nisl. Morbi a neque magna. Etiam a magna fermentum, porta est efficitur, faucibus
+          nunc. Nulla facilisi. Fusce eros ligula, vulputate sit amet mauris quis, porttitor lacinia mi. Pellentesque
+          congue mauris ac eleifend convallis. Mauris semper maximus neque, sit amet faucibus lectus tempus a. Aliquam
+          molestie lacinia consectetur. Fusce tincidunt sodales sapien vel ultrices. Nam scelerisque risus sit amet
+          purus tempor, vestibulum vestibulum eros vestibulum. Vivamus sed semper nisl. Pellentesque nulla mi, elementum
+          eu porttitor vitae, faucibus ornare mi. Donec dignissim tristique odio, sed finibus justo tempor sed. Vivamus
+          felis dui, bibendum eu lobortis ut, porta ac ipsum. Integer aliquam eu arcu vitae vestibulum. Aenean id ex ac
+          quam lacinia.
         </p>
       </div>
       <hr class="divider">
@@ -621,11 +663,24 @@
     </section>
 
     <section class="city">
-
+      <div class="professional_icon">
+        <span><img src="./assets/img/profissionais.svg">Cidades de atuação</span>
+      </div>
+      <div class="professional_information-text city_text">
+        <p>
+          <strong>Cidades de atuação:</strong>
+          <br>
+          <span>
+            São Paulo - SP, Santos - SP, São Vicente - SP, Campinas - SP, Osasco - SP, Rio de Janeiro - RJ
+          </span>
+        </p>
+      </div>
     </section>
 
     <section class="footer">
-
+      <p class="footer_pagination">
+        <img src="assets/img/logo-modo.svg"> <span> Página 1/5 </span>
+      </p>
     </section>
   </div>
 </body>
