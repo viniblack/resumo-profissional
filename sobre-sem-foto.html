@@ -353,203 +353,8 @@
 </style>
 
 <!-- Style -->
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+<link rel="stylesheet" href="style.css">
 
-  :root {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    color: #121212;
-  }
-
-  strong {
-    font-weight: 500;
-  }
-
-  .background {
-    position: absolute;
-
-    z-index: -1;
-
-  }
-
-  .container {
-    margin: 0 5vw;
-  }
-
-  .professional_icon {
-    margin-bottom: 1rem;
-
-  }
-
-  .professional_icon span {
-    color: #464646;
-    display: flex;
-    font-size: 1.5rem;
-    font-weight: 500;
-
-  }
-
-  .professional_icon img {
-    margin-right: 1rem;
-    width: 2.7vw;
-
-  }
-
-  .divider {
-    background-color: #eaebeb;
-    height: 3px;
-    border: none;
-    margin: 1.5rem 0;
-  }
-
-  /* Header */
-
-  .header_professional {
-    padding-top: 11vh;
-
-  }
-
-  .header_professional-name {
-    font: 300 3.5rem Roboto;
-    color: #464646;
-  }
-
-  .header_professional-text {
-    font-weight: bold;
-
-    color: #777777;
-    font-size: 1.5rem;
-    line-height: 1.5;
-
-  }
-
-  .header_professional-text span:not(:last-child)::after {
-    content: ' |';
-
-  }
-
-  .header_shapes-elipse-blue {
-    position: absolute;
-
-    right: -15vw;
-    top: -9vh;
-    width: 40vw;
-
-  }
-
-  .header_shapes-elipse-yellow {
-    position: absolute;
-
-    right: 12vw;
-    top: 10vh;
-    width: 20vw;
-    z-index: -1;
-
-  }
-
-  .header_shapes-elipse-grey {
-    position: absolute;
-
-    right: -10vw;
-    top: -5vh;
-    width: 20vw;
-  }
-
-  .header_shapes-elipse-white {
-    width: 37vw;
-
-  }
-
-  .header_shapes-photo {
-    position: absolute;
-
-    left: 1.5vw;
-    top: 1.5vh;
-    width: 90%;
-
-  }
-
-  /* Info */
-  .info {
-    margin-top: 15vh;
-
-  }
-
-  .info_contacts {
-    font-size: 1.3rem;
-
-  }
-
-  ul.info_contacts li {
-    display: inline;
-
-    line-height: 2;
-
-  }
-
-  .info_contacts li:not(:first-child) {
-    margin-left: .5rem;
-
-  }
-
-  .info_contacts img {
-    margin-right: .4rem;
-    width: 2vw;
-
-  }
-
-  /* About */
-
-  .about-text {
-    text-align: justify;
-
-    line-height: 1.2;
-    word-spacing: 1px;
-
-  }
-
-  /* Professional information */
-  ul.professional_information li {
-    display: inline;
-
-    margin-right: 20rem;
-    line-height: 2;
-
-  }
-
-  /* City */
-  .city_text span {
-    line-height: 2rem;
-
-  }
-
-  /* Footer */
-
-  .footer_pagination {
-    display: flex;
-    align-items: center;
-
-    bottom: 3vh;
-    color: #777777;
-    font-size: 1.5rem;
-    position: absolute;
-    right: 4vw;
-    word-spacing: 3px;
-
-  }
-
-  .footer_pagination span::before {
-    content: "|";
-
-  }
-
-  .footer_pagination img {
-    margin-right: .5rem;
-    width: 10vw;
-
-  }
-</style>
 </head>
 
 <body>
@@ -562,12 +367,12 @@
           <span>Desenvolvedor front-end</span>
           <span>UX Designer</span>
           <span>UI Designer</span>
-
+        </p>
       </div>
       <div class="header_shapes">
         <img class="header_shapes-elipse-blue" src="./assets/img/elipse-blue.svg">
-        <img class="header_shapes-elipse-yellow" src="./assets/img/elipse-yellow.svg">
-        <img class="header_shapes-elipse-grey" src="./assets/img/elipse-grey.svg">
+        <img class="no_picture_header_shapes-elipse-yellow" src="./assets/img/elipse-yellow.svg">
+        <img class="no_picture_header_shapes-elipse-grey" src="./assets/img/elipse-grey.svg">
 
 
       </div>
@@ -607,7 +412,7 @@
       <div class="professional_icon">
         <span><img src="./assets/img/about.svg"> Sobre</span>
       </div>
-      <div class="about-text">
+      <div class="about-text professional_info">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id purus felis. Vivamus a ornare ex, et imperdiet
           dui. Integer sollicitudin orci et ante dignissim, eget gravida sapien euismod. Nullam in justo porttitor,
@@ -639,34 +444,45 @@
       <div class="professional_icon">
         <span><img src="./assets/img/profissionais.svg">Dados Profissionais</span>
       </div>
-      <div class="professional_information-text">
-        <ul class="professional_information">
-          <li>
-            <strong>Tipo de contratação:</strong> CLT/PJ
-          </li>
-          <li>
-            <strong>Pretensão salarial CLT:</strong> R$10.000,00
-          </li>
-          <li>
-            <strong>Tempo de atuação:</strong> +5 anos
-          </li>
-          <li>
-            <strong>Pretensão salarial PJ:</strong> R$10.000,00
-          </li>
-          <li>
-            <strong>Última remuneração</strong> R$10.000,00
-          </li>
-        </ul>
+      <div class="professional_information_text professional_info">
+        <table>
+          <tr>
+            <td class="professional_information_text-col-1">
+              <table>
+                <p>
+                  Tipo de contratação: <span>CLT/PJ</span>
+                </p>
+
+                <p>
+                  Tipo de atuação: <span>+5 anos</span>
+                </p>
+                <p>
+                  Pretensão salarial PJ: <span>R$10.000,00</span>
+                </p>
+              </table>
+            </td>
+            <td class="professional_information_text-col-2">
+              <table>
+                <p>
+                  Pretensão salarial CLT: <span>R$10.000,00</span>
+                </p>
+
+                <p>
+                  Última remuneração <span>+5 anos</span>
+                </p>
+              </table>
+            </td>
+          </tr>
+        </table>
       </div>
       <hr class="divider">
 
     </section>
-
     <section class="city">
       <div class="professional_icon">
         <span><img src="./assets/img/profissionais.svg">Cidades de atuação</span>
       </div>
-      <div class="professional_information-text city_text">
+      <div class="city_text professional_info">
         <p>
           <strong>Cidades de atuação:</strong>
           <br>

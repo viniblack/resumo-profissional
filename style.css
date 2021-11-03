@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #121212;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.background {
+  position: absolute;
+
+  z-index: -1;
+
+}
+
+.container {
+  margin: 0 5vw;
+}
+
+.professional_icon-title {
+  font: 500 2.5rem Roboto;
+  color: #464646;
+
+}
+
+.professional_icon span {
+  color: #464646;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
+
+.professional_icon img {
+  margin-right: 1rem;
+  width: 2.7vw;
+
+}
+
+.divider {
+  background-color: #eaebeb;
+  height: 3px;
+  border: none;
+  margin: 1.5rem 0;
+}
+
+
+/* Header */
+
+.header {
+  margin-bottom: 15vh;
+
+}
+
+.header_professional {
+  padding-top: 11vh;
+
+}
+
+.header_professional-name {
+  font: 300 3.3rem Roboto;
+  color: #464646;
+}
+
+.header_professional-name-information {
+  text-align: end;
+}
+
+.header_professional-text {
+  font-weight: bold;
+
+  color: #777777;
+  font-size: 1.5rem;
+  line-height: 1.5;
+
+}
+
+.header_professional-text span:not(:last-child)::after {
+  content: ' |';
+
+}
+
+.header_shapes-elipse-blue {
+  position: absolute;
+
+  right: -15vw;
+  top: -9vh;
+  width: 40vw;
+
+}
+
+.header_shapes-elipse-yellow {
+  position: absolute;
+
+  right: 32vw;
+  top: 14vh;
+  width: 17vw;
+
+}
+
+.no_picture_header_shapes-elipse-yellow {
+  position: absolute;
+
+  right: 12vw;
+  top: 10vh;
+  width: 20vw;
+  z-index: -1;
+
+}
+
+.header_shapes-elipse-white {
+  width: 37vw;
+
+}
+
+.no_picture_header_shapes-elipse-grey {
+  position: absolute;
+
+  right: -10vw;
+  top: -2vh;
+  width: 20vw;
+}
+
+.header_shapes-container-photo {
+  position: absolute;
+
+  right: 4vw;
+  top: 3.5vh;
+
+}
+
+.header_shapes-photo {
+  position: absolute;
+
+  left: 1.5vw;
+  top: 1.5vh;
+  width: 90%;
+
+}
+
+/* Info */
+
+.info_contacts {
+  font-size: 1.3rem;
+
+}
+
+ul.info_contacts li {
+  display: inline;
+
+  line-height: 2;
+
+}
+
+.info_contacts li:not(:first-child) {
+  margin-left: .5rem;
+
+}
+
+.info_contacts img {
+  margin-right: .4rem;
+  width: 2vw;
+
+}
+
+/* About */
+
+.about-text {
+  text-align: justify;
+
+  line-height: 1.2;
+  word-spacing: 1px;
+
+}
+
+/* Professional information */
+.professional_information_text form {
+  width: 100%;
+
+}
+
+.professional_information_text p {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #464646;
+}
+
+.professional_information_text span {
+  margin-left: .5rem;
+  font-weight: normal;
+
+}
+
+.professional_information_text-col-1 {
+  padding-right: 30vw;
+
+}
+
+.professional_information_text-col-2 {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* City */
+.city_text span {
+  line-height: 2rem;
+
+}
+
+/* Academic formation */
+.professional_info img {
+  margin-right: 1rem;
+  width: 1rem;
+}
+
+.professional_info span:not(:last-child)::after{
+  content: ' | ';
+  margin: 0 .5rem;
+}
+
+.professional_info-desciption {
+  margin-top: 1rem;
+  text-align: justify;
+
+}
+
+.professional_info {
+  margin-top: 1.5vh;
+}
+
+.certifications-icon {
+  width: 4vw !important;
+}
+
+.history_info{
+  font-weight: 200;
+}
+
+/* Footer */
+
+.footer_pagination {
+  display: flex;
+  align-items: center;
+
+  bottom: 3vh;
+  color: #777777;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 4vw;
+  word-spacing: 3px;
+
+}
+
+.footer_pagination span::before {
+  content: "|";
+
+}
+
+.footer_pagination img {
+  margin-right: .5rem;
+  width: 10vw;
+
+}
