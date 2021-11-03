@@ -1,0 +1,16 @@
+<svg id="Grupo_3159" data-name="Grupo 3159" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="630" height="104" viewBox="0 0 630 104">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_4103" data-name="Retângulo 4103" width="630" height="104" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Retângulo_4104" data-name="Retângulo 4104" width="203" height="60" transform="translate(28)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_20" data-name="Grupo de máscara 20" clip-path="url(#clip-path)">
+    <path id="Caminho_2417" data-name="Caminho 2417" d="M2154.778,88.013v191.81c28.211,35.559,75.312,59.082,128.629,59.354,44.292.226,84.361-15.44,113.091-40.81,23.423-20.683,55.515-32.236,88.933-32.236h369.347V88.013Z" transform="translate(-2154.778 -237.013)" fill="#ececec"/>
+  </g>
+  <g id="Grupo_de_máscara_21" data-name="Grupo de máscara 21" clip-path="url(#clip-path-2)">
+    <ellipse id="Elipse_303" data-name="Elipse 303" cx="105" cy="104.5" rx="105" ry="104.5" transform="translate(25 -149)" fill="#0081c5"/>
+  </g>
+</svg>
