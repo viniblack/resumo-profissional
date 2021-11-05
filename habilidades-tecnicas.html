@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Resumo profissional</title>
+</head>
+
+<!-- Reset  -->
+<style>
+  html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+  }
+
+  body {
+    margin: 0;
+  }
+
+  main {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+  }
+
+  pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+  }
+
+  a {
+    background-color: transparent;
+  }
+
+  abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+  }
+
+  b,
+  strong {
+    font-weight: bolder;
+  }
+
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+  }
+
+  small {
+    font-size: 80%;
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  img {
+    border-style: none;
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+  }
+
+  button,
+  input {
+    /* 1 */
+    overflow: visible;
+  }
+
+  button,
+  select {
+    /* 1 */
+    text-transform: none;
+  }
+
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+
+  legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+  }
+
+  progress {
+    vertical-align: baseline;
+  }
+
+  textarea {
+    overflow: auto;
+  }
+
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+  }
+
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+
+  [type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+  }
+
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+  }
+
+  details {
+    display: block;
+  }
+
+  summary {
+    display: list-item;
+  }
+
+  template {
+    display: none;
+  }
+
+  [hidden] {
+    display: none;
+  }
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+
+  body {
+    line-height: 1;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  blockquote,
+  q {
+    quotes: none;
+  }
+
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+</style>
+
+<!-- Style -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <img class="background" src="./assets/img/bg2.svg">
+  <div class="container">
+    <section class="header technical-abilities_header">
+      <div class="header_professional">
+        <h1 class="header_professional-name header_professional-name-information">
+          <strong>João</strong> Aparecido Silva
+        </h1>
+      </div>
+    </section>
+
+    <section class="technical-abilities">
+      <div class="professional_icon">
+        <h2 class="professional_icon-title technical-abilities_title">Habilidades Técnicas</h2>
+      </div>
+      <p class="professional_info-desciption technical-abilities-desciption">
+        Confira abaixo a autoavaliação do profissional nas habilidades técnicas da sua área de atuação, em uma escala
+        crescente, desde o nível mais inexperiente, <strong>"Nenhum"</strong> até o mais proficiente,
+        <strong>"Ninja"</strong>.
+      </p>
+      <div class="technical-abilities_level">
+        <div>
+          <h3><img src="assets/img/level-0.svg" alt=""><span>Nenhum</span></h3>
+          <p>
+            Lógica de programação; Programação estruturada;
+            Operadores lógicos e controles de fluxo; HTML; CSS;
+            JavaScript
+          </p>
+        </div>
+        <div>
+          <h3><img src="assets/img/level-1.svg" alt=""><span>Nível Baixo</span></h3>
+          <p>
+            ECMAScript; React JS
+          </p>
+        </div>
+        <div>
+          <h3><img src="assets/img/level-2.svg" alt=""><span>Nível Médio </span></h3>
+          <p>
+            Compilado x Interpretado; Classes, atributos e
+            métodos; Construtores, encapsulamento, sobrecarga
+            e sobrescrita ; Vetores e Matrizes; Herança e
+            polimorfismo; Interfaces; Tabelas ; Relacionamentos;
+            Restrições; SQL; REST; React Native; Node.js; PHP
+          </p>
+        </div>
+        <div>
+          <h3><img src="assets/img/level-3.svg" alt=""><span>Nível Alto</span></h3>
+          <p>
+            Habilidade 1; habilidade 2; habilidade 3; habilidade 4; habilidade 5;
+            habilidade 6; habilidade 7; habilidade 8; habilidade 9; habilidade 10;
+            habilidade 11; habilidade 12; Habilidade 1; habilidade 2; habilidade 3;
+            habilidade 4; habilidade 5; habilidade 6; habilidade 7; habilidade 8;
+            habilidade 9; habilidade 10; habilidade 11; habilidade 12;
+          </p>
+        </div>
+        <div>
+          <h3><img src="assets/img/level-4.svg" alt=""><span>Nível Ninja</span></h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptas
+            magnam itaque voluptatem exercitationem enim magni reiciendis et?
+            A nisi vero in ex, possimus placeat pariatur veniam aut fuga rerum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="footer">
+      <p class="footer_pagination">
+        <img src="assets/img/logo-modo.svg"> <span> Página 4/5 </span>
+      </p>
+    </section>
+  </div>
+</body>
+
+</html>
