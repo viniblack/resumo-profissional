@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Resumo profissional</title>
+</head>
+
+<!-- Reset  -->
+<style>
+  html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+  }
+
+  body {
+    margin: 0;
+  }
+
+  main {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+  }
+
+  pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+  }
+
+  a {
+    background-color: transparent;
+  }
+
+  abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+  }
+
+  b,
+  strong {
+    font-weight: bolder;
+  }
+
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+  }
+
+  small {
+    font-size: 80%;
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  img {
+    border-style: none;
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+  }
+
+  button,
+  input {
+    /* 1 */
+    overflow: visible;
+  }
+
+  button,
+  select {
+    /* 1 */
+    text-transform: none;
+  }
+
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+
+  legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+  }
+
+  progress {
+    vertical-align: baseline;
+  }
+
+  textarea {
+    overflow: auto;
+  }
+
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+  }
+
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+
+  [type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+  }
+
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+  }
+
+  details {
+    display: block;
+  }
+
+  summary {
+    display: list-item;
+  }
+
+  template {
+    display: none;
+  }
+
+  [hidden] {
+    display: none;
+  }
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+
+  body {
+    line-height: 1;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  blockquote,
+  q {
+    quotes: none;
+  }
+
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+</style>
+
+<!-- Style -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <img class="background" src="./assets/img/bg3.svg">
+  <div class="container">
+    <section class="header header-soft-skill">
+      <div class="header_professional header_professional_soft-skill">
+        <h1 class="header_professional-name"><strong>João</strong> Aparecido Silva
+        </h1>
+      </div>
+    </section>
+    <section class="languages">
+      <div class="professional_icon">
+        <h2 class="professional_icon-title">
+          <span class="professional_icon-title languages-title">
+            <img class="certifications-icon" src="assets/img/languages.svg" alt=""> <span
+            >Idiomas</span>
+          </span>
+        </h2>
+      </div>
+      <div>
+        <table class="languages_language_list">
+          <tr>
+            <td>
+              <p>Chinês (simplificado)</p>
+              <p><strong>Conversação:</strong> Avançado</p>
+              <p><strong>Leitura:</strong> Intermediário</p>
+              <p><strong>Escrita:</strong> Básico</p>
+            </td>
+
+            <td>
+              <p>Inglês</p>
+              <p><strong>Conversação:</strong> Intermediário</p>
+              <p><strong>Leitura:</strong> Avançado</p>
+              <p><strong>Escrita:</strong> Intermediário</p>
+            </td>
+
+            <td>
+              <p>Português</p>
+              <p><strong>Conversação:</strong> Básico</p>
+              <p><strong>Leitura:</strong> Básico</p>
+              <p><strong>Escrita:</strong> Avançado</p>
+            </td>
+          </tr>
+        </table>
+        <hr class="divider">
+      </div>
+    </section>
+
+    <section class="soft-skill">
+      <div class="professional_icon">
+        <h2 class="professional_icon-title">
+          <span class="professional_icon-title">
+            Soft Skills
+          </span>
+        </h2>
+      </div>
+      <div class="soft-skill_subdescription">
+        <p class="professional_info-desciption">
+          Confira abaixo as características comportamentais mais proeminentes e os motivadores que guiam o profissional,
+          organizados hierarquicamente.
+        </p>
+      </div>
+      <div>
+        <table class="soft-skill_list">
+          <tr>
+            <td class="soft-skill_behavioral">
+              <p>Características Comportamentais</p>
+              <p>Habilidades sócio-emocionais relacionadas ao comportamento do profissional no ambiente de trabalho.</p>
+              <table>
+                <tr>
+                  <ul>
+                    <li>
+                      <img src="assets/img/behavioral/01_comportamental.svg" alt="">
+                      <span>Autonomia</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/02_comportamental.svg" alt="">
+                      <span>Comunicação</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/03_comportamental.svg" alt="">
+                      <span>Criatividade/Solução de problemas complexos</span>
+
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/04_comportamental.svg" alt="">
+                      <span>Trabalho em
+                        equipe/Colaboração</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/05_comportamental.svg" alt="">
+                      <span>Visão estratégica</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/06_comportamental.svg" alt="">
+                      <span>Resiliência</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/07_comportamental.svg" alt="">
+                      <span>Relacionamento interpessoal</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/08_comportamental.svg" alt="">
+                      <span>Perfil hands on (mão na massa)</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/09_comportamental.svg" alt="">
+                      <span>Pensamento crítico</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/10_comportamental.svg" alt="">
+                      <span>Negociação/Persuasão</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/11_comportamental.svg" alt="">
+                      <span>Liderança</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/12_comportamental.svg" alt="">
+                      <span>Inteligência emocional</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/13_comportamental.svg" alt="">
+                      <span>Gestão do tempo</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/14_comportamental.svg" alt="">
+                      <span>Gestão de conflitos</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/behavioral/15_comportamental.svg" alt="">
+                      <span>Empreendedorismo corporativo</span>
+                    </li>
+                  </ul>
+                </tr>
+              </table>
+            </td>
+            <td class="soft-skill_motivators">
+              <p>Motivadores</p>
+              <p>Os motivadores são as razões que impulsionam as pessoas na sua vida profissional.</p>
+              <table>
+                <tr>
+                  <ul>
+                    <li>
+                      <img src="assets/img/motivators/01_motivadores.svg" alt="">
+                      <span>Autonomia</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/motivators/02_motivadores.svg" alt="">
+                      <span>Salário/Benefícios</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/motivators/03_motivadores.svg" alt="">
+                      <span>Mobilidade/Logística</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/motivators/04_motivadores.svg" alt="">
+                      <span>Reputação da marca</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/motivators/05_motivadores.svg" alt="">
+                      <span>Propósito da empresa</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/motivators/06_motivadores.svg" alt="">
+                      <span>Oportunidade de viagem</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/motivators/07_motivadores.svg" alt="">
+                      <span>Impacto social</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/motivators/08_motivadores.svg" alt="">
+                      <span>Cargo/Hierarquia</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/motivators/09_motivadores.svg" alt="">
+                      <span> Exposição</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/motivators/10_motivadores.svg" alt="">
+                      <span>Ambiente físico</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/motivators/11_motivadores.svg" alt="">
+                      <span>Lorem ipsum</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/motivators/12_motivadores.svg" alt="">
+                      <span>Trabalho remoto</span>
+                    </li>
+                  </ul>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+    </section>
+    <section class="footer">
+      <p class="footer_pagination">
+        <img src="assets/img/logo-modo.svg"> <span> Página 3/5 </span>
+      </p>
+    </section>
+  </div>
+</body>
+
+</html>

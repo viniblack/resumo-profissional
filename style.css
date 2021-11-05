@@ -6,6 +6,10 @@
   color: #121212;
 }
 
+body {
+  background-color: #F8F9FA;
+}
+
 strong {
   font-weight: 500;
 }
@@ -56,10 +60,19 @@ strong {
 
 }
 
+.header-soft-skill {
+  margin-bottom: 5vh;
+}
+
 .header_professional {
   padding-top: 11vh;
 
 }
+
+.header_professional_soft-skill {
+  padding-top: 7vh;
+}
+
 
 .header_professional-name {
   font: 300 3.3rem Roboto;
@@ -218,7 +231,7 @@ ul.info_contacts li {
   width: 1rem;
 }
 
-.professional_info span:not(:last-child)::after{
+.professional_info span:not(:last-child)::after {
   content: ' | ';
   margin: 0 .5rem;
 }
@@ -237,8 +250,79 @@ ul.info_contacts li {
   width: 4vw !important;
 }
 
-.history_info{
+.history_info {
   font-weight: 200;
+}
+
+.languages-title {
+  margin-bottom: 2rem;
+}
+
+.languages_language_list th {
+  padding-top: 1.5rem;
+  text-align: start;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+}
+
+.languages_language_list td:not(:last-child) {
+  padding-right: 6rem;
+
+}
+
+.languages_language_list td p {
+  margin-bottom: .2rem;
+
+}
+
+.languages_language_list td p:first-child {
+  font-weight: bold;
+  margin-bottom: .6rem;
+
+}
+
+.soft-skill_subdescription {
+  margin-bottom: 2rem;
+}
+
+.soft-skill_list td p:first-child {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+.soft-skill_list td p:nth-child(2) {
+  margin-right: 3rem;
+}
+
+.soft-skill_behavioral,
+.soft-skill_motivators {
+  font-size: .9rem;
+  background-color: #FDFEFE;
+  /* border-radius: 15px; */
+  padding-bottom: 1rem;
+}
+
+.soft-skill_list td:first-child {
+  border: 15px solid #F8F9FA;
+  border-style: none solid none none;
+}
+
+.soft-skill_list p,
+.soft-skill_list img {
+  padding-left: 1rem;
+
+}
+
+.soft-skill_behavioral p,
+.soft-skill_motivators p {
+  margin-bottom: .8rem;
+}
+
+.soft-skill_behavioral span,
+.soft-skill_motivators span {
+  vertical-align: super;
 }
 
 /* Footer */
