@@ -7,353 +7,341 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Resumo profissional</title>
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Reset  -->
+  <style>
+    html {
+      line-height: 1.15;
+      /* 1 */
+      -webkit-text-size-adjust: 100%;
+      /* 2 */
+    }
 
-<!-- Reset  -->
-<style>
-  html {
-    line-height: 1.15;
-    /* 1 */
-    -webkit-text-size-adjust: 100%;
-    /* 2 */
-  }
+    body {
+      margin: 0;
+    }
 
-  body {
-    margin: 0;
-  }
+    main {
+      display: block;
+    }
 
-  main {
-    display: block;
-  }
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
 
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
+    hr {
+      box-sizing: content-box;
+      /* 1 */
+      height: 0;
+      /* 1 */
+      overflow: visible;
+      /* 2 */
+    }
 
-  hr {
-    box-sizing: content-box;
-    /* 1 */
-    height: 0;
-    /* 1 */
-    overflow: visible;
-    /* 2 */
-  }
+    pre {
+      font-family: monospace, monospace;
+      /* 1 */
+      font-size: 1em;
+      /* 2 */
+    }
 
-  pre {
-    font-family: monospace, monospace;
-    /* 1 */
-    font-size: 1em;
-    /* 2 */
-  }
+    a {
+      background-color: transparent;
+    }
 
-  a {
-    background-color: transparent;
-  }
+    abbr[title] {
+      border-bottom: none;
+      /* 1 */
+      text-decoration: underline;
+      /* 2 */
+      text-decoration: underline dotted;
+      /* 2 */
+    }
 
-  abbr[title] {
-    border-bottom: none;
-    /* 1 */
-    text-decoration: underline;
-    /* 2 */
-    text-decoration: underline dotted;
-    /* 2 */
-  }
+    b,
+    strong {
+      font-weight: bolder;
+    }
 
-  b,
-  strong {
-    font-weight: bolder;
-  }
+    code,
+    kbd,
+    samp {
+      font-family: monospace, monospace;
+      /* 1 */
+      font-size: 1em;
+      /* 2 */
+    }
 
-  code,
-  kbd,
-  samp {
-    font-family: monospace, monospace;
-    /* 1 */
-    font-size: 1em;
-    /* 2 */
-  }
+    small {
+      font-size: 80%;
+    }
 
-  small {
-    font-size: 80%;
-  }
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
 
-  sub,
-  sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-  }
+    sub {
+      bottom: -0.25em;
+    }
 
-  sub {
-    bottom: -0.25em;
-  }
+    sup {
+      top: -0.5em;
+    }
 
-  sup {
-    top: -0.5em;
-  }
+    img {
+      border-style: none;
+    }
 
-  img {
-    border-style: none;
-  }
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      /* 1 */
+      font-size: 100%;
+      /* 1 */
+      line-height: 1.15;
+      /* 1 */
+      margin: 0;
+      /* 2 */
+    }
 
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-    font-family: inherit;
-    /* 1 */
-    font-size: 100%;
-    /* 1 */
-    line-height: 1.15;
-    /* 1 */
-    margin: 0;
-    /* 2 */
-  }
+    button,
+    input {
+      /* 1 */
+      overflow: visible;
+    }
 
-  button,
-  input {
-    /* 1 */
-    overflow: visible;
-  }
+    button,
+    select {
+      /* 1 */
+      text-transform: none;
+    }
 
-  button,
-  select {
-    /* 1 */
-    text-transform: none;
-  }
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
 
-  button,
-  [type="button"],
-  [type="reset"],
-  [type="submit"] {
-    -webkit-appearance: button;
-  }
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
 
-  button::-moz-focus-inner,
-  [type="button"]::-moz-focus-inner,
-  [type="reset"]::-moz-focus-inner,
-  [type="submit"]::-moz-focus-inner {
-    border-style: none;
-    padding: 0;
-  }
+    fieldset {
+      padding: 0.35em 0.75em 0.625em;
+    }
 
-  button:-moz-focusring,
-  [type="button"]:-moz-focusring,
-  [type="reset"]:-moz-focusring,
-  [type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText;
-  }
+    legend {
+      box-sizing: border-box;
+      /* 1 */
+      color: inherit;
+      /* 2 */
+      display: table;
+      /* 1 */
+      max-width: 100%;
+      /* 1 */
+      padding: 0;
+      /* 3 */
+      white-space: normal;
+      /* 1 */
+    }
 
-  fieldset {
-    padding: 0.35em 0.75em 0.625em;
-  }
+    progress {
+      vertical-align: baseline;
+    }
 
-  legend {
-    box-sizing: border-box;
-    /* 1 */
-    color: inherit;
-    /* 2 */
-    display: table;
-    /* 1 */
-    max-width: 100%;
-    /* 1 */
-    padding: 0;
-    /* 3 */
-    white-space: normal;
-    /* 1 */
-  }
+    textarea {
+      overflow: auto;
+    }
 
-  progress {
-    vertical-align: baseline;
-  }
+    [type="checkbox"],
+    [type="radio"] {
+      box-sizing: border-box;
+      /* 1 */
+      padding: 0;
+      /* 2 */
+    }
 
-  textarea {
-    overflow: auto;
-  }
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+      height: auto;
+    }
 
-  [type="checkbox"],
-  [type="radio"] {
-    box-sizing: border-box;
-    /* 1 */
-    padding: 0;
-    /* 2 */
-  }
+    [type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
 
-  [type="number"]::-webkit-inner-spin-button,
-  [type="number"]::-webkit-outer-spin-button {
-    height: auto;
-  }
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      /* 1 */
+      font: inherit;
+      /* 2 */
+    }
 
-  [type="search"] {
-    -webkit-appearance: textfield;
-    /* 1 */
-    outline-offset: -2px;
-    /* 2 */
-  }
+    details {
+      display: block;
+    }
 
-  [type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-  }
+    summary {
+      display: list-item;
+    }
 
-  ::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    /* 1 */
-    font: inherit;
-    /* 2 */
-  }
+    template {
+      display: none;
+    }
 
-  details {
-    display: block;
-  }
+    [hidden] {
+      display: none;
+    }
 
-  summary {
-    display: list-item;
-  }
+    @page {
+      margin: 0;
+      padding: 0;
+    }
 
-  template {
-    display: none;
-  }
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
 
-  [hidden] {
-    display: none;
-  }
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
 
-  html,
-  body,
-  div,
-  span,
-  applet,
-  object,
-  iframe,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  blockquote,
-  pre,
-  a,
-  abbr,
-  acronym,
-  address,
-  big,
-  cite,
-  code,
-  del,
-  dfn,
-  em,
-  img,
-  ins,
-  kbd,
-  q,
-  s,
-  samp,
-  small,
-  strike,
-  strong,
-  sub,
-  sup,
-  tt,
-  var,
-  b,
-  u,
-  i,
-  center,
-  dl,
-  dt,
-  dd,
-  ol,
-  ul,
-  li,
-  fieldset,
-  form,
-  label,
-  legend,
-  table,
-  caption,
-  tbody,
-  tfoot,
-  thead,
-  tr,
-  th,
-  td,
-  article,
-  aside,
-  canvas,
-  details,
-  embed,
-  figure,
-  figcaption,
-  footer,
-  header,
-  hgroup,
-  menu,
-  nav,
-  output,
-  ruby,
-  section,
-  summary,
-  time,
-  mark,
-  audio,
-  video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-  }
+    body {
+      line-height: 1;
+    }
 
-  article,
-  aside,
-  details,
-  figcaption,
-  figure,
-  footer,
-  header,
-  hgroup,
-  menu,
-  nav,
-  section {
-    display: block;
-  }
+    ol,
+    ul {
+      list-style: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
 
-  body {
-    line-height: 1;
-  }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+  </style>
 
-  ol,
-  ul {
-    list-style: none;
-  }
-
-  blockquote,
-  q {
-    quotes: none;
-  }
-
-  blockquote:before,
-  blockquote:after,
-  q:before,
-  q:after {
-    content: '';
-    content: none;
-  }
-
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-</style>
-
-<!-- Style -->
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -379,32 +367,16 @@
     </section>
 
     <section class="info">
-      <ul class="info_contacts">
-        <li>
-          <span><img src="assets/img/profile.svg">23 anos</span>
-        </li>
-        <li>
-          <span><img src="assets/img/phone.svg">(11) 91823 3032</span>
-        </li>
-        <li>
-          <span><img src="assets/img/mail.svg">joao.silva@moovenconsulting.com.br</span>
-        </li>
-        <li>
-          <span><img src="assets/img/pin.svg">Osasco, São Paulo, Brasil</span>
-        </li>
-        <li>
-          <span><img src="assets/img/linkedin.svg">linkedin.com/in/joaosilva</span>
-        </li>
-        <li>
-          <span><img src="assets/img/web.svg">joao.silva.com.br</span>
-        </li>
-        <li>
-          <span><img src="assets/img/facebook.svg">facebook.com/Joao-Silva/</span>
-        </li>
-        <li>
-          <span><img src="assets/img/youtube.svg">youtube.com/c/joaosilva</span>
-        </li>
-      </ul>
+      <div class="info_contacts">
+        <span><img src="assets/img/profile.svg">23 anos</span>
+        <span><img src="assets/img/phone.svg">(11) 91823 3032</span>
+        <span><img src="assets/img/mail.svg">joao.silva@moovenconsulting.com.br</span>
+        <span><img src="assets/img/pin.svg">Osasco, São Paulo, Brasil</span>
+        <span><img src="assets/img/linkedin.svg">linkedin.com/in/joaosilva</span>
+        <span><img src="assets/img/web.svg">joao.silva.com.br</span>
+        <span><img src="assets/img/youtube.svg">youtube.com/c/joaosilva</span>
+        <span><img src="assets/img/facebook.svg">facebook.com/Joao-Silva/</span>
+      </div>
       <hr class="divider">
     </section>
 
@@ -425,16 +397,7 @@
           felis dui, bibendum eu lobortis ut, porta ac ipsum. Integer aliquam eu arcu vitae vestibulum. Aenean id ex ac
           quam lacinia lobortis eros.
           <br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id purus felis. Vivamus a ornare ex, et imperdiet
-          dui. Integer sollicitudin orci et ante dignissim, eget gravida sapien euismod. Nullam in justo porttitor,
-          vulputate diam eu, dignissim nisl. Morbi a neque magna. Etiam a magna fermentum, porta est efficitur, faucibus
-          nunc. Nulla facilisi. Fusce eros ligula, vulputate sit amet mauris quis, porttitor lacinia mi. Pellentesque
-          congue mauris ac eleifend convallis. Mauris semper maximus neque, sit amet faucibus lectus tempus a. Aliquam
-          molestie lacinia consectetur. Fusce tincidunt sodales sapien vel ultrices. Nam scelerisque risus sit amet
-          purus tempor, vestibulum vestibulum eros vestibulum. Vivamus sed semper nisl. Pellentesque nulla mi, elementum
-          eu porttitor vitae, faucibus ornare mi. Donec dignissim tristique odio, sed finibus justo tempor sed. Vivamus
-          felis dui, bibendum eu lobortis ut, porta ac ipsum. Integer aliquam eu arcu vitae vestibulum. Aenean id ex ac
-          quam lacinia.
+
         </p>
       </div>
       <hr class="divider">
@@ -454,17 +417,18 @@
                 </p>
 
                 <p>
-                  Tipo de atuação: <span>+5 anos</span>
-                </p>
-                <p>
                   Pretensão salarial PJ: <span>R$10.000,00</span>
+                </p>
+
+                <p>
+                  Pretensão salarial CLT: <span>R$10.000,00</span>
                 </p>
               </table>
             </td>
             <td class="professional_information_text-col-2">
               <table>
                 <p>
-                  Pretensão salarial CLT: <span>R$10.000,00</span>
+                  Tipo de atuação: <span>+5 anos</span>
                 </p>
 
                 <p>
