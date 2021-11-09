@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="20" viewBox="0 0 13 20">
-  <g id="_14_comportamental" data-name="14_comportamental" fill="#0081c5" stroke="#f8f9fa" stroke-width="1" opacity="0.35">
-    <rect width="13" height="20" stroke="none"/>
-    <rect x="0.5" y="0.5" width="12" height="19" fill="none"/>
-  </g>
+<svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.35">
+<path opacity="0.35" d="M13 0H0V20H13V0Z" fill="#0081C5"/>
+</g>
 </svg>

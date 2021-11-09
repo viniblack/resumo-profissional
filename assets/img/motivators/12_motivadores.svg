@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="20" viewBox="0 0 13 20">
-  <g id="_12_motivadores" data-name="12_motivadores" fill="#f7bc15" stroke="#f8f9fa" stroke-width="1" opacity="0.45">
-    <path d="M0,0H13a0,0,0,0,1,0,0V13.5A6.5,6.5,0,0,1,6.5,20h0A6.5,6.5,0,0,1,0,13.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
-    <path d="M.6.5H12.4a.1.1,0,0,1,.1.1V13.5a6,6,0,0,1-6,6h0a6,6,0,0,1-6-6V.6A.1.1,0,0,1,.6.5Z" fill="none"/>
-  </g>
+<svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.45">
+<path opacity="0.45" d="M0 0H13V13.5C13 15.2239 12.3152 16.8772 11.0962 18.0962C9.87721 19.3152 8.22391 20 6.5 20V20C4.77609 20 3.12279 19.3152 1.90381 18.0962C0.684819 16.8772 0 15.2239 0 13.5L0 0Z" fill="#F7BC15"/>
+</g>
 </svg>
