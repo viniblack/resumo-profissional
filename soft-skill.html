@@ -145,13 +145,6 @@
       padding: 0;
     }
 
-    button:-moz-focusring,
-    [type="button"]:-moz-focusring,
-    [type="reset"]:-moz-focusring,
-    [type="submit"]:-moz-focusring {
-      outline: 1px dotted ButtonText;
-    }
-
     fieldset {
       padding: 0.35em 0.75em 0.625em;
     }
@@ -192,13 +185,6 @@
       height: auto;
     }
 
-    [type="search"] {
-      -webkit-appearance: textfield;
-      /* 1 */
-      outline-offset: -2px;
-      /* 2 */
-    }
-
     [type="search"]::-webkit-search-decoration {
       -webkit-appearance: none;
     }
@@ -224,6 +210,11 @@
 
     [hidden] {
       display: none;
+    }
+
+    @page {
+      margin: 0;
+      padding: 0;
     }
 
     html,
@@ -338,11 +329,6 @@
       list-style: none;
     }
 
-    blockquote,
-    q {
-      quotes: none;
-    }
-
     blockquote:before,
     blockquote:after,
     q:before,
@@ -356,6 +342,7 @@
       border-spacing: 0;
     }
   </style>
+
 
   <!-- Style -->
   <link rel="stylesheet" href="style.css">
