@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Resumo profissional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700"
+    rel="stylesheet">
+  <!-- Reset  -->
+  <style>
+    html {
+      line-height: 1.15;
+      /* 1 */
+      -webkit-text-size-adjust: 100%;
+      /* 2 */
+    }
+
+    body {
+      margin: 0;
+    }
+
+    main {
+      display: block;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    hr {
+      box-sizing: content-box;
+      /* 1 */
+      height: 0;
+      /* 1 */
+      overflow: visible;
+      /* 2 */
+    }
+
+    pre {
+      font-family: monospace, monospace;
+      /* 1 */
+      font-size: 1em;
+      /* 2 */
+    }
+
+    a {
+      background-color: transparent;
+    }
+
+    abbr[title] {
+      border-bottom: none;
+      /* 1 */
+      text-decoration: underline;
+      /* 2 */
+      text-decoration: underline dotted;
+      /* 2 */
+    }
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+    code,
+    kbd,
+    samp {
+      font-family: monospace, monospace;
+      /* 1 */
+      font-size: 1em;
+      /* 2 */
+    }
+
+    small {
+      font-size: 80%;
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+    img {
+      border-style: none;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      /* 1 */
+      font-size: 100%;
+      /* 1 */
+      line-height: 1.15;
+      /* 1 */
+      margin: 0;
+      /* 2 */
+    }
+
+    button,
+    input {
+      /* 1 */
+      overflow: visible;
+    }
+
+    button,
+    select {
+      /* 1 */
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    fieldset {
+      padding: 0.35em 0.75em 0.625em;
+    }
+
+    legend {
+      box-sizing: border-box;
+      /* 1 */
+      color: inherit;
+      /* 2 */
+      display: table;
+      /* 1 */
+      max-width: 100%;
+      /* 1 */
+      padding: 0;
+      /* 3 */
+      white-space: normal;
+      /* 1 */
+    }
+
+    progress {
+      vertical-align: baseline;
+    }
+
+    textarea {
+      overflow: auto;
+    }
+
+    [type="checkbox"],
+    [type="radio"] {
+      box-sizing: border-box;
+      /* 1 */
+      padding: 0;
+      /* 2 */
+    }
+
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+    [type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      /* 1 */
+      font: inherit;
+      /* 2 */
+    }
+
+    details {
+      display: block;
+    }
+
+    summary {
+      display: list-item;
+    }
+
+    template {
+      display: none;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+    @page {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+  </style>
+  <!-- Style -->
+  <style>
+    /* CSS MODO */
+    :root {
+      /* Background */
+      --content-background: #F8F9FA;
+      /* Background behavioral/motivators */
+      --color-white: #FDFEFE;
+      /* Title */
+      --color-secondary: #464646;
+      /* Text */
+      --color-dark: #121212;
+      /* Subtitle */
+      --color-grey: #777777;
+      /* Title technical abilities */
+      --color-primary: #0081C5;
+      /* Divider */
+      --color-grey-light: #eaebeb;
+    }
+
+    body {
+      background-color: var(--content-background);
+      font-family: 'Roboto', sans-serif;
+      color: var(--color-dark);
+      line-height: 1;
+    }
+
+    :root {
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      color: var(--color-dark);
+    }
+
+    strong {
+      font-weight: 500;
+    }
+
+    .background {
+      position: absolute;
+
+      z-index: -1;
+
+    }
+
+    .container {
+      margin: 0 .70cm;
+    }
+
+    .professional_icon-title {
+      font: 500 2rem Roboto;
+      color: var(--color-secondary);
+
+    }
+
+    .professional_icon span {
+      color: var(--color-secondary);
+      display: flex;
+      font-size: 1.5rem;
+      font-weight: 500;
+
+    }
+
+    .professional_icon img {
+      margin-right: 1rem;
+      width: .75cm;
+    }
+
+    .certifications_professional_icon-image {
+      width: .75cm;
+      margin-right: 0 !important;
+    }
+
+    .divider {
+      background-color: var(--color-grey-light);
+      height: 3px;
+      border: none;
+      margin: 1.5rem 0;
+    }
+
+    /* Header */
+
+    .header {
+      margin-bottom: 2cm;
+
+    }
+
+    .header_professional {
+      padding-top: 2cm;
+
+    }
+
+    .header-soft-skill {
+      margin-bottom: 1.3cm;
+    }
+
+    .header_information {
+      padding-top: 1.5cm;
+    }
+
+    .information-text {
+      color: var(--color-dark) !important;
+    }
+
+    .header_professional_soft-skill {
+      padding-top: 1.5cm;
+    }
+
+
+    .header_professional-name {
+      font: 300 2.5rem Roboto;
+      color: var(--color-secondary);
+    }
+
+    .header_professional-name-information {
+      text-align: end;
+    }
+
+    .header_professional-text {
+      font-weight: bold;
+
+      color: var(--color-grey);
+      font-size: 1.3rem;
+      line-height: 1.5;
+      margin-right: 10cm;
+
+    }
+
+    .header_professional-text span:not(:last-child)::after {
+      content: ' | ';
+
+    }
+
+    .header_shapes-elipse-blue {
+      position: absolute;
+
+      right: -3cm;
+      top: -2.5cm;
+      width: 7cm;
+
+    }
+
+    .header_shapes-elipse-yellow {
+      position: absolute;
+
+      right: 5cm;
+      top: 3cm;
+      width: 3.5cm;
+
+    }
+
+    .no_picture_header_shapes-elipse-yellow {
+      position: absolute;
+
+      right: 2cm;
+      top: 1.5cm;
+      width: 4.5cm;
+      z-index: -1;
+
+    }
+
+    .header_shapes-elipse-white {
+      width: 6cm;
+
+    }
+
+    .no_picture_header_shapes-elipse-grey {
+      position: absolute;
+
+      right: -2cm;
+      top: -.5cm;
+      width: 4.2cm;
+    }
+
+    .header_shapes-container-photo {
+      position: absolute;
+
+      right: 1cm;
+      top: .6cm;
+
+    }
+
+    .header_shapes-photo {
+      position: absolute;
+
+      left: .3cm;
+      top: .3cm;
+      width: 90%;
+
+    }
+
+    /* Info */
+
+    .info_contacts {
+      font-size: 1.3rem;
+
+    }
+
+    .info_contacts>span:first-child img {
+      margin-right: .5rem;
+      margin-left: 0;
+    }
+
+    .info_contacts>span {
+      line-height: 1.5;
+    }
+
+    .info_contacts img {
+      margin-right: .5rem;
+      width: .5cm;
+    }
+
+    /* About */
+
+    .about-text {
+      text-align: justify;
+
+      line-height: 1.2;
+      word-spacing: 1px;
+
+    }
+
+    /* Professional information */
+    .professional_information_text form {
+      width: 100%;
+
+    }
+
+    .professional_information_text p {
+      margin-bottom: 1rem;
+      font-weight: bold;
+      color: var(--color-dark);
+    }
+
+    .professional_information_text span {
+      margin-left: .5rem;
+      font-weight: normal;
+
+    }
+
+    .professional_information_text-col-1 {
+      padding-right: 3cm;
+
+    }
+
+    .professional_information_text-col-1 p {
+      margin-bottom: 1rem;
+
+    }
+
+    .professional_information_text-col-2 p {
+      margin-bottom: .5rem;
+    }
+
+    .professional_information_text-col-2 {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    /* City */
+    .city_text span {
+      line-height: 2;
+
+    }
+
+    /* Academic formation */
+    .professional_info img {
+      margin-right: 1rem;
+      width: 1rem;
+    }
+
+    .professional_info span:not(:last-child)::after {
+      content: ' | ';
+      margin: 0 .5rem;
+    }
+
+    .professional_info-desciption {
+      margin-top: 1rem;
+      text-align: justify;
+      line-height: 1.3;
+      color: var(--color-grey);
+    }
+
+    .professional_info {
+      margin-top: .4cm;
+    }
+
+    .certifications-icon,
+    .languages-icon {
+      width: 1cm !important;
+    }
+
+    .history_info {
+      font-weight: 200;
+    }
+
+    .languages-title {
+      margin-bottom: 2rem;
+    }
+
+    .languages_language_list th {
+      padding-top: 1.5rem;
+      text-align: start;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .languages_language_list td:not(:last-child) {
+      padding-right: 6rem;
+
+    }
+
+    .languages_language_list td p {
+      margin-bottom: .2rem;
+
+    }
+
+    .languages_language_list td p:first-child {
+      font-weight: bold;
+      margin-bottom: .6rem;
+
+    }
+
+    .soft-skill_subdescription {
+      margin-bottom: 2rem;
+    }
+
+    .soft-skill_list td p:first-child {
+      font-weight: bold;
+      font-size: 1rem;
+      padding-top: 1rem;
+    }
+
+    .soft-skill_list td p:nth-child(2) {
+      margin-right: 2rem;
+    }
+
+    .soft-skill_behavioral,
+    .soft-skill_motivators {
+      font-size: .8rem;
+      background-color: var(--color-white);
+      margin: 0 .25cm;
+      border-radius: 10px;
+    }
+
+    .soft-skill_behavioral td,
+    .soft-skill_motivators td {
+      padding: .2rem .5rem 1.5rem;
+    }
+
+    .soft-skill_behavioral p,
+    .soft-skill_motivators p {
+      margin-bottom: .8rem;
+    }
+
+    .soft-skill_behavioral span,
+    .soft-skill_motivators span {
+      vertical-align: super;
+    }
+
+    .soft-skill-description {
+      color: var(--color-grey);
+      line-height: 1.3;
+    }
+
+    /* Technical Abilities */
+    .technical-abilities_header {
+      margin-bottom: 2.5cm;
+    }
+
+    .technical-abilities_title {
+      margin-bottom: 1.5rem;
+    }
+
+    .technical-abilities-desciption {
+      font-size: 1rem;
+      margin-right: 0.5cm;
+      line-height: 1.3;
+    }
+
+    .technical-abilities_level {
+      margin-top: .5cm;
+    }
+
+    .technical-abilities_level>div {
+      width: 7.8cm;
+      height: 100%;
+      display: inline-block;
+      flex-direction: column;
+      vertical-align: top;
+      background-color: var(--color-white);
+      margin: .5rem 1.5rem .5rem 0rem;
+      border-radius: 10px;
+      padding: 1.5rem;
+    }
+
+    .technical-abilities_level>div img {
+      width: .5cm;
+      margin-right: 1rem;
+    }
+
+    .technical-abilities_level>div h3 {
+      color: var(--color-primary);
+      font-weight: bold;
+      font-size: 1rem;
+      padding-bottom: 1rem;
+      vertical-align: middle;
+    }
+
+    .technical-abilities_level p {
+      line-height: 1.4;
+    }
+
+    .professional_match_percentage {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+
+    .professional_match_percentage>div {
+      width: 33%;
+      margin-bottom: .5cm;
+    }
+
+    /* Footer */
+    .footer_pagination {
+      /* display: flex; */
+      align-items: center;
+
+      bottom: .75cm;
+      color: var(--color-grey);
+      font-size: 1rem;
+      position: absolute;
+      display: block;
+      right: 1cm;
+      word-spacing: 3px;
+
+    }
+
+    .footer_pagination span {
+      vertical-align: super;
+
+    }
+
+    .footer_pagination span::before {
+      content: " | ";
+
+    }
+
+    .footer_pagination img {
+      margin-right: .5rem;
+      width: 1.5cm;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sobre" style="page-break-before: always;">
+    <img class="background" src="./assets/img/bg.svg">
+    <div class="container">
+      <section class="header ">
+        <div class="header_professional">
+          <h1 class="header_professional-name"><strong>João</strong> Aparecido Silva</h1>
+          <p class="header_professional-text">
+            <span>Desenvolvedor front-end</span>
+            <span>UX Designer</span>
+            <span>UI Designer</span>
+          </p>
+        </div>
+        <div class="header_shapes">
+          <img class="header_shapes-elipse-blue" src="./assets/img/elipse-blue.svg">
+          <img class="header_shapes-elipse-yellow" src="./assets/img/elipse-yellow.svg">
+          <div class="header_shapes-container-photo">
+            <img class="header_shapes-elipse-white" src="./assets/img/elipse-white.svg">
+            <img class="header_shapes-photo" src="./assets/img/perfil.png">
+          </div>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="info_contacts">
+          <span><img src="assets/img/profile.svg">23 anos</span>
+          <span><img src="assets/img/phone.svg">(11) 91823 3032</span>
+          <span><img src="assets/img/mail.svg">joao.silva@moovenconsulting.com.br</span>
+          <span><img src="assets/img/pin.svg">Osasco, São Paulo, Brasil</span>
+          <span><img src="assets/img/linkedin.svg">linkedin.com/in/joaosilva</span>
+          <span><img src="assets/img/web.svg">joao.silva.com.br</span>
+          <span><img src="assets/img/youtube.svg">youtube.com/c/joaosilva</span>
+          <span><img src="assets/img/facebook.svg">facebook.com/Joao-Silva/</span>
+        </div>
+        <hr class="divider">
+      </section>
+
+      <section class="about">
+        <div class="professional_icon">
+          <span><img src="./assets/img/about.svg"> Sobre</span>
+        </div>
+        <div class="about-text professional_info">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id purus felis. Vivamus a ornare ex, et
+            imperdiet
+            dui. Integer sollicitudin orci et ante dignissim, eget gravida sapien euismod. Nullam in justo porttitor,
+            vulputate diam eu, dignissim nisl. Morbi a neque magna. Etiam a magna fermentum, porta est efficitur,
+            faucibus
+            nunc. Nulla facilisi. Fusce eros ligula, vulputate sit amet mauris quis, porttitor lacinia mi. Pellentesque
+            congue mauris ac eleifend convallis. Mauris semper maximus neque, sit amet faucibus lectus tempus a. Aliquam
+            molestie lacinia consectetur. Fusce tincidunt sodales sapien vel ultrices. Nam scelerisque risus sit amet
+            purus tempor, vestibulum vestibulum eros vestibulum. Vivamus sed semper nisl. Pellentesque nulla mi,
+            elementum
+            eu porttitor vitae, faucibus ornare mi. Donec dignissim tristique odio, sed finibus justo tempor sed.
+            Vivamus
+            felis dui, bibendum eu lobortis ut, porta ac ipsum. Integer aliquam eu arcu vitae vestibulum. Aenean id ex
+            ac
+            quam lacinia lobortis eros.
+          </p>
+        </div>
+        <hr class="divider">
+      </section>
+
+      <section class="professional_information">
+        <div class="professional_icon">
+          <span><img src="./assets/img/profissionais.svg">Dados Profissionais</span>
+        </div>
+        <div class="professional_information-text professional_info">
+          <table>
+            <tr>
+              <td class="professional_information_text-col-1">
+                <table>
+                  <p>
+                    Tipo de contratação: <span>CLT/PJ</span>
+                  </p>
+
+                  <p>
+                    Pretensão salarial PJ: <span>R$10.000,00</span>
+                  </p>
+
+                  <p>
+                    Pretensão salarial CLT: <span>R$10.000,00</span>
+                  </p>
+                </table>
+              </td>
+              <td class="professional_information_text-col-2">
+                <table>
+                  <p>
+                    Tipo de atuação: <span>+5 anos</span>
+                  </p>
+
+                  <p>
+                    Última remuneração <span>+5 anos</span>
+                  </p>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr class="divider">
+
+      </section>
+
+      <section class="city">
+        <div class="professional_icon">
+          <span><img src="./assets/img/pin-blue.svg">Dados Profissionais</span>
+        </div>
+        <div class="city_text professional_info">
+          <p>
+            <strong>Cidades de atuação:</strong>
+          </p>
+          <br>
+          <p class="list">
+            São Paulo - SP, Santos - SP, São Vicente - SP, Campinas - SP, Osasco - SP, Rio de Janeiro - RJ
+          </p>
+        </div>
+      </section>
+
+      <section class="footer">
+        <p class="footer_pagination">
+          <img src="assets/img/logo-modo.svg"><span>Página 1/5</span>
+        </p>
+      </section>
+    </div>
+  </div>
+  <div id="sobre-sem-foto" style="page-break-before: always;">
+    <img class="background" src="./assets/img/bg.svg">
+    <div class="container">
+      <section class="header">
+        <div class="header_professional">
+          <h1 class="header_professional-name"><strong>João</strong> Aparecido Silva</h1>
+          <p class="header_professional-text">
+            <span>Desenvolvedor front-end</span>
+            <span>UX Designer</span>
+            <span>UI Designer</span>
+          </p>
+        </div>
+        <div class="header_shapes">
+          <img class="header_shapes-elipse-blue" src="./assets/img/elipse-blue.svg">
+          <img class="no_picture_header_shapes-elipse-yellow" src="./assets/img/elipse-yellow.svg">
+          <img class="no_picture_header_shapes-elipse-grey" src="./assets/img/elipse-grey.svg">
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="info_contacts">
+          <span><img src="assets/img/profile.svg">23 anos</span>
+          <span><img src="assets/img/phone.svg">(11) 91823 3032</span>
+          <span><img src="assets/img/mail.svg">joao.silva@moovenconsulting.com.br</span>
+          <span><img src="assets/img/pin.svg">Osasco, São Paulo, Brasil</span>
+          <span><img src="assets/img/linkedin.svg">linkedin.com/in/joaosilva</span>
+          <span><img src="assets/img/web.svg">joao.silva.com.br</span>
+          <span><img src="assets/img/youtube.svg">youtube.com/c/joaosilva</span>
+          <span><img src="assets/img/facebook.svg">facebook.com/Joao-Silva/</span>
+        </div>
+        <hr class="divider">
+      </section>
+
+      <section class="about">
+        <div class="professional_icon">
+          <span><img src="./assets/img/about.svg"> Sobre</span>
+        </div>
+        <div class="about-text professional_info">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id purus felis. Vivamus a ornare ex, et
+            imperdiet
+            dui. Integer sollicitudin orci et ante dignissim, eget gravida sapien euismod. Nullam in justo porttitor,
+            vulputate diam eu, dignissim nisl. Morbi a neque magna. Etiam a magna fermentum, porta est efficitur,
+            faucibus
+            nunc. Nulla facilisi. Fusce eros ligula, vulputate sit amet mauris quis, porttitor lacinia mi. Pellentesque
+            congue mauris ac eleifend convallis. Mauris semper maximus neque, sit amet faucibus lectus tempus a. Aliquam
+            molestie lacinia consectetur. Fusce tincidunt sodales sapien vel ultrices. Nam scelerisque risus sit amet
+            purus tempor, vestibulum vestibulum eros vestibulum. Vivamus sed semper nisl. Pellentesque nulla mi,
+            elementum
+            eu porttitor vitae, faucibus ornare mi. Donec dignissim tristique odio, sed finibus justo tempor sed.
+            Vivamus
+            felis dui, bibendum eu lobortis ut, portas ac ipsum. Integer aliquam eu arcu vitae vestibulum. Aenean id ex
+            ac
+            quam lacinia lobortis erros.
+
+          </p>
+        </div>
+        <hr class="divider">
+      </section>
+
+      <section class="professional_information">
+        <div class="professional_icon">
+          <span><img src="./assets/img/profissionais.svg">Dados Profissionais</span>
+        </div>
+        <div class="professional_information-text professional_info">
+          <table>
+            <tr>
+              <td class="professional_information_text-col-1">
+                <table>
+                  <p>
+                    Tipo de contratação: <span>CLT/PJ</span>
+                  </p>
+
+                  <p>
+                    Pretensão salarial PJ: <span>R$10.000,00</span>
+                  </p>
+
+                  <p>
+                    Pretensão salarial CLT: <span>R$10.000,00</span>
+                  </p>
+                </table>
+              </td>
+              <td class="professional_information_text-col-2">
+                <table>
+                  <p>
+                    Tipo de atuação: <span>+5 anos</span>
+                  </p>
+
+                  <p>
+                    Última remuneração <span>+5 anos</span>
+                  </p>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr class="divider">
+      </section>
+      <section class="city">
+        <div class="professional_icon">
+          <span><img src="./assets/img/pin-blue.svg">Cidades de atuação</span>
+        </div>
+        <div class="city_text professional_info">
+          <p>
+            <strong>Cidades de atuação:</strong>
+          </p>
+          <br>
+          <p>
+            São Paulo - SP, Santos - SP, São Vicente - SP, Campinas - SP, Osasco - SP, Rio de Janeiro - RJ
+          </p>
+        </div>
+      </section>
+
+      <section class="footer">
+        <p class="footer_pagination">
+          <img src="assets/img/logo-modo.svg"><span>Página 1/5</span>
+        </p>
+      </section>
+    </div>
+  </div>
+  <div id="informacoes-profissional" style="page-break-before: always;">
+    <img class="background" src="./assets/img/bg2.svg">
+    <div class="container">
+      <section class="header">
+        <div class="header_professional header_information">
+          <h1 class="header_professional-name header_professional-name-information"><strong>João</strong> Aparecido
+            Silva
+          </h1>
+        </div>
+      </section>
+
+      <section class="formation">
+        <div class="professional_icon">
+          <h2 class="professional_icon-title">Formação Acadêmica</h2>
+        </div>
+        <div class="professional_info">
+          <img src="./assets/img/more.svg">
+          <span>Instituição</span>
+          <span>Curso</span>
+          <span>15/06/2012 até 18/08/2020</span>
+        </div>
+        <p class="professional_info-desciption information-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <hr class="divider">
+      </section>
+
+      <section class="history">
+        <div class="professional_icon">
+          <h2 class="professional_icon-title">Histórico Profissional</h2>
+        </div>
+        <div class="professional_info history_info">
+          <img src="./assets/img/more.svg">
+          <span style="font-weight: 200;"><strong>Função:</strong>Sua função</span>
+          <span><strong>Empresa:</strong>Sua empresa</span>
+          <span><strong>15/06/2012</strong> até <strong>18/08/2020</strong></span>
+        </div>
+        <p class="professional_info-desciption information-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+          <br>
+          <br>
+          <br>
+        </p>
+
+        <div class="professional_info history_info">
+          <img src="./assets/img/more.svg">
+          <span><strong>Função:</strong>Sua função</span>
+          <span><strong>Empresa:</strong>Sua empresa</span>
+          <span><strong>15/06/2012</strong> até <strong>18/08/2020</strong></span>
+        </div>
+        <p class="professional_info-desciption history_info-desciption information-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <hr class="divider">
+      </section>
+
+      <section class="certifications">
+        <div class="professional_icon">
+          <h2 class="professional_icon-title">
+            <img class="certifications_professional_icon-image" src="assets/img/certificacoes.svg" alt="">
+            Certificações e ferramentas
+          </h2>
+        </div>
+        <div>
+          <p class="professional_info-desciption information-text">
+            Adobe Camera Raw; Adobe Illustrator; Adobe InDesign;Adobe Lightroom; Adobe Photoshop; Adobe Premiere;Adobe
+            XD;
+            Design Sprint; Figma; Marvel App; Pacote Office; Sketch
+          </p>
+        </div>
+      </section>
+      <section class="footer">
+        <p class="footer_pagination">
+          <img src="assets/img/logo-modo.svg"> <span> Página 2/5 </span>
+        </p>
+      </section>
+    </div>
+  </div>
+  <div id="soft-skill" style="page-break-before: always;">
+    <img class="background" src="./assets/img/bg3.svg">
+    <div class="container">
+      <section class="header header-soft-skill">
+        <div class="header_professional header_professional_soft-skill">
+          <h1 class="header_professional-name"><strong>João</strong> Aparecido Silva
+          </h1>
+        </div>
+      </section>
+      <section class="languages">
+        <div class="professional_icon">
+          <h2 class="professional_icon-title">
+            <span class="professional_icon-title languages-title">
+              <img class="languages-icon" src="assets/img/languages.svg" alt="">
+              <span>Idiomas</span>
+            </span>
+          </h2>
+        </div>
+        <div>
+          <table class="languages_language_list">
+            <tbody>
+              <tr>
+                <td>
+                  <p>Chinês (simplificado)</p>
+                  <p><strong>Conversação:</strong> Avançado</p>
+                  <p><strong>Leitura:</strong> Intermediário</p>
+                  <p><strong>Escrita:</strong> Básico</p>
+                </td>
+
+                <td>
+                  <p>Inglês</p>
+                  <p><strong>Conversação:</strong> Intermediário</p>
+                  <p><strong>Leitura:</strong> Avançado</p>
+                  <p><strong>Escrita:</strong> Intermediário</p>
+                </td>
+
+                <td>
+                  <p>Português</p>
+                  <p><strong>Conversação:</strong> Básico</p>
+                  <p><strong>Leitura:</strong> Básico</p>
+                  <p><strong>Escrita:</strong> Avançado</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr class="divider">
+        </div>
+      </section>
+
+      <section class="soft-skill">
+        <div class="professional_icon">
+          <h2 class="professional_icon-title">
+            <span class="professional_icon-title">
+              Soft Skills
+            </span>
+          </h2>
+        </div>
+        <div class="soft-skill_subdescription">
+          <p class="professional_info-desciption">
+            Confira abaixo as características comportamentais mais proeminentes e os motivadores que guiam o
+            profissional,
+            organizados hierarquicamente.
+          </p>
+        </div>
+
+        <table class="soft-skill_list">
+          <tbody>
+            <tr>
+              <td>
+                <table class="soft-skill_behavioral">
+                  <td>
+                    <p>Características Comportamentais</p>
+                    <p class="soft-skill-description">
+                      Habilidades sócio-emocionais relacionadas ao comportamento do profissional no ambiente de
+                      trabalho.
+                    </p>
+                    <ul>
+                      <li>
+                        <img src="assets/img/behavioral/01_comportamental.svg" alt="">
+                        <span>Autonomia</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/02_comportamental.svg" alt="">
+                        <span>Comunicação</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/03_comportamental.svg" alt="">
+                        <span>Criatividade/Solução de problemas complexos</span>
+
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/04_comportamental.svg" alt="">
+                        <span>Trabalho em
+                          equipe/Colaboração</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/05_comportamental.svg" alt="">
+                        <span>Visão estratégica</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/06_comportamental.svg" alt="">
+                        <span>Resiliência</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/07_comportamental.svg" alt="">
+                        <span>Relacionamento interpessoal</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/08_comportamental.svg" alt="">
+                        <span>Perfil hands on (mão na massa)</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/09_comportamental.svg" alt="">
+                        <span>Pensamento crítico</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/10_comportamental.svg" alt="">
+                        <span>Negociação/Persuasão</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/11_comportamental.svg" alt="">
+                        <span>Liderança</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/12_comportamental.svg" alt="">
+                        <span>Inteligência emocional</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/13_comportamental.svg" alt="">
+                        <span>Gestão do tempo</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/14_comportamental.svg" alt="">
+                        <span>Gestão de conflitos</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/behavioral/15_comportamental.svg" alt="">
+                        <span>Empreendedorismo corporativo</span>
+                      </li>
+                    </ul>
+                  </td>
+                </table>
+              </td>
+              <td>
+                <table class="soft-skill_motivators">
+                  <td>
+                    <p>Motivadores</p>
+                    <p class="soft-skill-description">
+                      Os motivadores são as razões que impulsionam as pessoas na sua
+                      vida profissional.
+                    </p>
+                    <ul>
+                      <li>
+                        <img src="assets/img/motivators/01_motivadores.svg" alt="">
+                        <span>Autonomia</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/motivators/02_motivadores.svg" alt="">
+                        <span>Salário/Benefícios</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/motivators/03_motivadores.svg" alt="">
+                        <span>Mobilidade/Logística</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/motivators/04_motivadores.svg" alt="">
+                        <span>Reputação da marca</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/motivators/05_motivadores.svg" alt="">
+                        <span>Propósito da empresa</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/motivators/06_motivadores.svg" alt="">
+                        <span>Oportunidade de viagem</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/motivators/07_motivadores.svg" alt="">
+                        <span>Impacto social</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/motivators/08_motivadores.svg" alt="">
+                        <span>Cargo/Hierarquia</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/motivators/09_motivadores.svg" alt="">
+                        <span> Exposição</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/motivators/10_motivadores.svg" alt="">
+                        <span>Ambiente físico</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/motivators/11_motivadores.svg" alt="">
+                        <span>Lorem ipsum</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/motivators/12_motivadores.svg" alt="">
+                        <span>Trabalho remoto</span>
+                      </li>
+                    </ul>
+                  </td>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="footer">
+        <p class="footer_pagination">
+          <img src="assets/img/logo-modo.svg"> <span> Página 3/5 </span>
+        </p>
+      </section>
+    </div>
+  </div>
+  <div id="habilidades-tecnicas" style="page-break-before: always;">
+    <img class="background" src="./assets/img/bg2.svg">
+    <div class="container">
+      <section class="header technical-abilities_header">
+        <div class="header_professional">
+          <h1 class="header_professional-name header_professional-name-information">
+            <strong>João</strong> Aparecido Silva
+          </h1>
+        </div>
+      </section>
+
+      <section class="technical-abilities">
+        <div class="professional_icon">
+          <h2 class="professional_icon-title technical-abilities_title">Habilidades Técnicas</h2>
+        </div>
+        <p class="professional_info-desciption technical-abilities-desciption">
+          Confira abaixo a autoavaliação do profissional nas habilidades técnicas da sua área de atuação, em uma escala
+          crescente, desde o nível mais inexperiente, <strong>"Nenhum"</strong> até o mais proficiente,
+          <strong>"Ninja"</strong>.
+        </p>
+        <div class="technical-abilities_level">
+          <div>
+            <h3><img src="assets/img/level-0.svg" alt=""><span>Nenhum</span></h3>
+            <p>
+              Lógica de programação; Programação estruturada;
+              Operadores lógicos e controles de fluxo; HTML; CSS;
+              JavaScript
+            </p>
+          </div>
+          <div>
+            <h3><img src="assets/img/level-1.svg" alt=""><span>Nível Baixo</span></h3>
+            <p>
+              ECMAScript; React JS
+            </p>
+          </div>
+          <div>
+            <h3><img src="assets/img/level-2.svg" alt=""><span>Nível Médio </span></h3>
+            <p>
+              Compilado x Interpretado; Classes, atributos e
+              métodos; Construtores, encapsulamento, sobrecarga
+              e sobrescrita ; Vetores e Matrizes; Herança e
+              polimorfismo; Interfaces; Tabelas ; Relacionamentos;
+              Restrições; SQL; REST; React Native; Node.js; PHP
+            </p>
+          </div>
+          <div>
+            <h3><img src="assets/img/level-3.svg" alt=""><span>Nível Alto</span></h3>
+            <p>
+              Habilidade 1; habilidade 2; habilidade 3; habilidade 4; habilidade 5;
+              habilidade 6; habilidade 7; habilidade 8; habilidade 9; habilidade 10;
+              habilidade 11; habilidade 12; Habilidade 1; habilidade 2; habilidade 3;
+              habilidade 4; habilidade 5; habilidade 6; habilidade 7; habilidade 8;
+              habilidade 9; habilidade 10; habilidade 11; habilidade 12;
+            </p>
+          </div>
+          <div>
+            <h3><img src="assets/img/level-4.svg" alt=""><span>Nível Ninja</span></h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptas
+              magnam itaque voluptatem exercitationem enim magni reiciendis et?
+              A nisi vero in ex, possimus placeat pariatur veniam aut fuga rerum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="footer">
+        <p class="footer_pagination">
+          <img src="assets/img/logo-modo.svg"> <span> Página 4/5 </span>
+        </p>
+      </section>
+    </div>
+  </div>
+  <div id="match-profissional" style="page-break-before: always;">
+    <img class=" background" src="./assets/img/bg3.svg">
+    <div class="container">
+      <section class="header header-soft-skill">
+        <div class="header_professional header_professional_soft-skill">
+          <h1 class="header_professional-name"><strong>João</strong> Aparecido Silva
+          </h1>
+        </div>
+      </section>
+      <section class="professional_match">
+        <div class="professional_icon">
+          <h2 class="professional_icon-title">
+            <h2 class="professional_icon-title">
+              Match profissional
+            </h2>
+          </h2>
+        </div>
+        <p class="professional_info-desciption">
+          Utilizando a expertise da MODO para quantificar a proficiência do
+          profissional nas profissões de sua comunidade. Quanto mais próximo do
+          100%, mais qualificado é o profissional para atuar na profissão.
+          <br> <br>
+          De acordo com a autoavaliação do profissional, este é o seu match em cada profissão:
+        </p>
+
+        <div class="professional_match_percentage">
+          <div>
+            <img style="width: 90%;" src="./assets/img/match.png" alt="">
+          </div>
+          <div>
+            <img style="width: 90%;" src="./assets/img/match.png" alt="">
+          </div>
+          <div>
+            <img style="width: 90%;" src="./assets/img/match.png" alt="">
+          </div>
+          <div>
+            <img style="width: 90%;" src="./assets/img/match.png" alt="">
+          </div>
+          <div>
+            <img style="width: 90%;" src="./assets/img/match.png" alt="">
+          </div>
+          <div>
+            <img style="width: 90%;" src="./assets/img/match.png" alt="">
+          </div>
+          <div>
+            <img style="width: 90%;" src="./assets/img/match.png" alt="">
+          </div>
+        </div>
+      </section>
+
+
+      <section class="footer">
+        <p class="footer_pagination">
+          <img src="assets/img/logo-modo.svg"> <span> Página 3/5 </span>
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

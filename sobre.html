@@ -9,8 +9,7 @@
   <title>Resumo profissional</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700"
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700"
     rel="stylesheet">
   <!-- Reset  -->
   <style>
@@ -340,8 +339,461 @@
       border-spacing: 0;
     }
   </style>
+  <!-- Style -->
+  <style>
+    /* CSS MODO */
+    :root {
+      /* Background */
+      --content-background: #F8F9FA;
+      /* Background behavioral/motivators */
+      --color-white: #FDFEFE;
+      /* Title */
+      --color-secondary: #464646;
+      /* Text */
+      --color-dark: #121212;
+      /* Subtitle */
+      --color-grey: #777777;
+      /* Title technical abilities */
+      --color-primary: #0081C5;
+      /* Divider */
+      --color-grey-light: #eaebeb;
+    }
 
-  <link rel="stylesheet" href="style.css">
+    body {
+      background-color: var(--content-background);
+      font-family: 'Roboto', sans-serif;
+      color: var(--color-dark);
+      line-height: 1;
+    }
+
+    :root {
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      color: var(--color-dark);
+    }
+
+    strong {
+      font-weight: 500;
+    }
+
+    .background {
+      position: absolute;
+
+      z-index: -1;
+
+    }
+
+    .container {
+      margin: 0 .70cm;
+    }
+
+    .professional_icon-title {
+      font: 500 2rem Roboto;
+      color: var(--color-secondary);
+
+    }
+
+    .professional_icon span {
+      color: var(--color-secondary);
+      display: flex;
+      font-size: 1.5rem;
+      font-weight: 500;
+
+    }
+
+    .professional_icon img {
+      margin-right: 1rem;
+      width: .75cm;
+    }
+
+    .certifications_professional_icon-image {
+      width: .75cm;
+      margin-right: 0 !important;
+    }
+
+    .divider {
+      background-color: var(--color-grey-light);
+      height: 3px;
+      border: none;
+      margin: 1.5rem 0;
+    }
+
+    /* Header */
+
+    .header {
+      margin-bottom: 2cm;
+
+    }
+
+    .header_professional {
+      padding-top: 2cm;
+
+    }
+
+    .header-soft-skill {
+      margin-bottom: 1.3cm;
+    }
+
+    .header_information {
+      padding-top: 1.5cm;
+    }
+
+    .information-text {
+      color: var(--color-dark) !important;
+    }
+
+    .header_professional_soft-skill {
+      padding-top: 1.5cm;
+    }
+
+
+    .header_professional-name {
+      font: 300 2.5rem Roboto;
+      color: var(--color-secondary);
+    }
+
+    .header_professional-name-information {
+      text-align: end;
+    }
+
+    .header_professional-text {
+      font-weight: bold;
+
+      color: var(--color-grey);
+      font-size: 1.3rem;
+      line-height: 1.5;
+      margin-right: 10cm;
+
+    }
+
+    .header_professional-text span:not(:last-child)::after {
+      content: ' | ';
+
+    }
+
+    .header_shapes-elipse-blue {
+      position: absolute;
+
+      right: -3cm;
+      top: -2.5cm;
+      width: 7cm;
+
+    }
+
+    .header_shapes-elipse-yellow {
+      position: absolute;
+
+      right: 5cm;
+      top: 3cm;
+      width: 3.5cm;
+
+    }
+
+    .no_picture_header_shapes-elipse-yellow {
+      position: absolute;
+
+      right: 2cm;
+      top: 1.5cm;
+      width: 4.5cm;
+      z-index: -1;
+
+    }
+
+    .header_shapes-elipse-white {
+      width: 6cm;
+
+    }
+
+    .no_picture_header_shapes-elipse-grey {
+      position: absolute;
+
+      right: -2cm;
+      top: -.5cm;
+      width: 4.2cm;
+    }
+
+    .header_shapes-container-photo {
+      position: absolute;
+
+      right: 1cm;
+      top: .6cm;
+
+    }
+
+    .header_shapes-photo {
+      position: absolute;
+
+      left: .3cm;
+      top: .3cm;
+      width: 90%;
+
+    }
+
+    /* Info */
+
+    .info_contacts {
+      font-size: 1.3rem;
+
+    }
+
+    .info_contacts>span:first-child img {
+      margin-right: .5rem;
+      margin-left: 0;
+    }
+
+    .info_contacts>span {
+      line-height: 1.5;
+    }
+
+    .info_contacts img {
+      margin-right: .5rem;
+      width: .5cm;
+    }
+
+    /* About */
+
+    .about-text {
+      text-align: justify;
+
+      line-height: 1.2;
+      word-spacing: 1px;
+
+    }
+
+    /* Professional information */
+    .professional_information_text form {
+      width: 100%;
+
+    }
+
+    .professional_information_text p {
+      margin-bottom: 1rem;
+      font-weight: bold;
+      color: var(--color-dark);
+    }
+
+    .professional_information_text span {
+      margin-left: .5rem;
+      font-weight: normal;
+
+    }
+
+    .professional_information_text-col-1 {
+      padding-right: 3cm;
+
+    }
+
+    .professional_information_text-col-1 p {
+      margin-bottom: 1rem;
+
+    }
+
+    .professional_information_text-col-2 p {
+      margin-bottom: .5rem;
+    }
+
+    .professional_information_text-col-2 {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    /* City */
+    .city_text span {
+      line-height: 2;
+
+    }
+
+    /* Academic formation */
+    .professional_info img {
+      margin-right: 1rem;
+      width: 1rem;
+    }
+
+    .professional_info span:not(:last-child)::after {
+      content: ' | ';
+      margin: 0 .5rem;
+    }
+
+    .professional_info-desciption {
+      margin-top: 1rem;
+      text-align: justify;
+      line-height: 1.3;
+      color: var(--color-grey);
+    }
+
+    .professional_info {
+      margin-top: .4cm;
+    }
+
+    .certifications-icon,
+    .languages-icon {
+      width: 1cm !important;
+    }
+
+    .history_info {
+      font-weight: 200;
+    }
+
+    .languages-title {
+      margin-bottom: 2rem;
+    }
+
+    .languages_language_list th {
+      padding-top: 1.5rem;
+      text-align: start;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .languages_language_list td:not(:last-child) {
+      padding-right: 6rem;
+
+    }
+
+    .languages_language_list td p {
+      margin-bottom: .2rem;
+
+    }
+
+    .languages_language_list td p:first-child {
+      font-weight: bold;
+      margin-bottom: .6rem;
+
+    }
+
+    .soft-skill_subdescription {
+      margin-bottom: 2rem;
+    }
+
+    .soft-skill_list td p:first-child {
+      font-weight: bold;
+      font-size: 1rem;
+      padding-top: 1rem;
+    }
+
+    .soft-skill_list td p:nth-child(2) {
+      margin-right: 2rem;
+    }
+
+    .soft-skill_behavioral,
+    .soft-skill_motivators {
+      font-size: .8rem;
+      background-color: var(--color-white);
+      margin: 0 .25cm;
+      border-radius: 10px;
+    }
+
+    .soft-skill_behavioral td,
+    .soft-skill_motivators td {
+      padding: .2rem .5rem 1.5rem;
+    }
+
+    .soft-skill_behavioral p,
+    .soft-skill_motivators p {
+      margin-bottom: .8rem;
+    }
+
+    .soft-skill_behavioral span,
+    .soft-skill_motivators span {
+      vertical-align: super;
+    }
+
+    .soft-skill-description {
+      color: var(--color-grey);
+      line-height: 1.3;
+    }
+
+    /* Technical Abilities */
+    .technical-abilities_header {
+      margin-bottom: 2.5cm;
+    }
+
+    .technical-abilities_title {
+      margin-bottom: 1.5rem;
+    }
+
+    .technical-abilities-desciption {
+      font-size: 1rem;
+      margin-right: 0.5cm;
+      line-height: 1.3;
+    }
+
+    .technical-abilities_level {
+      margin-top: .5cm;
+    }
+
+    .technical-abilities_level>div {
+      width: 7.8cm;
+      height: 100%;
+      display: inline-block;
+      flex-direction: column;
+      vertical-align: top;
+      background-color: var(--color-white);
+      margin: .5rem 1.5rem .5rem 0rem;
+      border-radius: 10px;
+      padding: 1.5rem;
+    }
+
+    .technical-abilities_level>div img {
+      width: .5cm;
+      margin-right: 1rem;
+    }
+
+    .technical-abilities_level>div h3 {
+      color: var(--color-primary);
+      font-weight: bold;
+      font-size: 1rem;
+      padding-bottom: 1rem;
+      vertical-align: middle;
+    }
+
+    .technical-abilities_level p {
+      line-height: 1.4;
+    }
+
+    .professional_match_percentage {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+
+    .professional_match_percentage>div {
+      width: 33%;
+      margin-bottom: .5cm;
+    }
+
+    /* Footer */
+    .footer_pagination {
+      /* display: flex; */
+      align-items: center;
+
+      bottom: .75cm;
+      color: var(--color-grey);
+      font-size: 1rem;
+      position: absolute;
+      display: block;
+      right: 1cm;
+      word-spacing: 3px;
+
+    }
+
+    .footer_pagination span {
+      vertical-align: super;
+
+    }
+
+    .footer_pagination span::before {
+      content: " | ";
+
+    }
+
+    .footer_pagination img {
+      margin-right: .5rem;
+      width: 1.5cm;
+
+    }
+  </style>
 </head>
 
 <body>
